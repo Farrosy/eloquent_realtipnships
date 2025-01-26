@@ -17,4 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/users', [\App\Http\Controllers\useController::class, 'index']);
+Route::get('/users', [\App\Http\Controllers\UserController::class, 'index']);
+
+Route::get('/posts', [\App\Http\Controllers\UserController::class, 'index']);

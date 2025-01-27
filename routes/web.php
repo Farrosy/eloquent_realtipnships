@@ -19,4 +19,4 @@ Route::get('/', function () {
 
 Route::get('/users', [\App\Http\Controllers\UserController::class, 'index']);
 
-Route::get('/posts', [\App\Http\Controllers\UserController::class, 'index']);
+Route::get('/posts', [\App\Http\Controllers\PostController::class, 'index']);
